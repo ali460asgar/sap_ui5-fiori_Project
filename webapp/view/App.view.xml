@@ -1,0 +1,16 @@
+<mvc:View controllerName="fiori.app.fioridemo4.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Bar >
+            <contentLeft>
+                <Button text="button1"></Button>
+                <Button text="button2"></Button>
+                <Button text="button3"></Button>
+                <Button text="button4"></Button>
+            </contentLeft>
+    </Bar>
+    <App id="app">
+        
+    </App>
+</mvc:View>

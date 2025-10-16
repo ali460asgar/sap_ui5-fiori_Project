@@ -1,0 +1,6 @@
+<mvc:View controllerName="fiori.app.fioridemo4.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" class="appTitle" title="This is view1">
+    </Page>
+</mvc:View>
