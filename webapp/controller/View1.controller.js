@@ -5,6 +5,10 @@ sap.ui.define([
 
     return Controller.extend("fiori.app.fioridemo4.controller.View1", {
         onInit() {
+        },
+
+        onPress: function(){
+            this.getOwnerComponent().getRouter().navTo("RouteView2")
         }
     });
 });

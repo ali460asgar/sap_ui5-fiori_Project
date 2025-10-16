@@ -3,14 +3,15 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Bar >
-            <contentLeft>
-                <Button text="button1"></Button>
-                <Button text="button2"></Button>
-                <Button text="button3"></Button>
-                <Button text="button4"></Button>
-            </contentLeft>
+        <contentLeft>
+            <Title text="Title"></Title>
+        </contentLeft>
+        <contentRight>
+            <Button text="button1"></Button>
+            <Button text="button2"></Button>
+            <Button text="button3"></Button>
+        </contentRight>
     </Bar>
-    <App id="app">
-        
+    <App id="app"> 
     </App>
 </mvc:View>

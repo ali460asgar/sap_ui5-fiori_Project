@@ -5,6 +5,10 @@ sap.ui.define([
 
     return Controller.extend("fiori.app.fioridemo4.controller.View2", {
         onInit() {
+        },
+
+        onPressBackButton: function(){
+            history.go(-1)
         }
     });
 });
