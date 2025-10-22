@@ -7,8 +7,18 @@ sap.ui.define([
         onInit() {
         },
 
-        onPress: function(){
-            this.getOwnerComponent().getRouter().navTo("RouteView2")
+        onPressGoToV1: function(){
+                this.getOwnerComponent().getRouter().navTo("RouteView2")
+        },
+        onPressGoToV2: function(){
+                this.getOwnerComponent().getRouter().navTo("RouteView3")
+        },
+        onPressSubmitButton:function(){
+        let oInputVal = this.getView().byId("inputVal1").getValue();
+        let msg = `Welcome To ${oInputVal}`;
+        this.getView().byId("textVal1").setText(msg);
+        this.getView().byId("subButton").setType("Accept")
+        this.getView().byId("textVal1").setTextAlign("Left");
         }
     });
 });

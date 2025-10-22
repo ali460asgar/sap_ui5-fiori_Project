@@ -1,0 +1,41 @@
+<mvc:View controllerName="fiori.app.fioridemo4.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page4" class="appTitle" title="This is view4" titleAlignment="Center" showNavButton="true" navButtonPress="onPressBackButton" >
+        <ObjectHeader title="Jhon" number="100000" numberUnit="INR" backgroundDesign="Solid">
+            <attributes>
+                <ObjectAttribute title="Employee Id:" text="1000021"></ObjectAttribute>
+                <ObjectAttribute title="Designation:" text="Team Lead"></ObjectAttribute>
+            </attributes>
+            <statuses>
+                <ObjectStatus text="PERMINENT" state="Success"></ObjectStatus>
+            </statuses>
+        </ObjectHeader>
+        <IconTabBar >
+            <items>
+                <IconTabFilter icon="sap-icon://information">
+                    <f:SimpleForm title="Information" layout="ResponsiveGridLayout" labelSpanL="6" labelSpanM="6" emptySpanL="4" emptySpanM="4">
+                        <f:content>
+                            <Label text="Employee ID"/>
+                            <Text text="1000021"/>
+                            <Label text="Employee Name"/>
+                            <Text text="Jhon"/>
+                            <Label text="Employee Designation"/>
+                            <Text text="Team Lead"/>
+                            <Label text="Employee Email Id"/>
+                            <Text text="jhon@gmail.com"/>
+                            <Label text="Employee Phone No."/>
+                            <Text text="+91 8888888888"/>
+                            <Label text="Employee Skill"/>
+                            <Text text="sap fiori"/>
+                        </f:content> 
+                    </f:SimpleForm>
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://notes">
+                    <Text text="I am Notes" />
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>

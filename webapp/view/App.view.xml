@@ -2,7 +2,7 @@
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Bar >
+    <!-- <Bar >
         <contentLeft>
             <Title text="Title"></Title>
         </contentLeft>
@@ -11,7 +11,7 @@
             <Button text="button2"></Button>
             <Button text="button3"></Button>
         </contentRight>
-    </Bar>
+    </Bar> -->
     <App id="app"> 
     </App>
 </mvc:View>

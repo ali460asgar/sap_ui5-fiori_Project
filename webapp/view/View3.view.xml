@@ -1,0 +1,33 @@
+<mvc:View controllerName="fiori.app.fioridemo4.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page3" class="appTitle" title="This is view3" titleAlignment="Center" showNavButton="true" navButtonPress="onPressBackButton">
+        <content>
+            <f:SimpleForm id="idView3Form" title="simple form" layout="ResponsiveGridLayout" labelSpanL="5" labelSpanM="2" emptySpanL="0" emptySpanM="0" columnsL="3" columnsM="2">
+                <f:content >
+                    <core:Title text="Personal Details"/>
+                    <Label text="Employee ID" class="sapUiTinyMarginTop"/>
+                    <Input value="1000021"/>
+                    <Label text="Employee Name" class="sapUiTinyMarginTop"/>
+                    <Input value="Jhon"/>
+                    <Label text="Employee Designation" class="sapUiTinyMarginTop"/>
+                    <Input value="Team Lead"/>
+                    <core:Title text="Other Details"/>
+                    <Label text="Employee Email Id" class="sapUiTinyMarginTop"/>
+                    <Input value="jhon@gmail.com"/>
+                    <Label text="Employee Phone No." class="sapUiTinyMarginTop"/>
+                    <Input value="+91 8888888888"/>
+                    <core:Title text="Skills Details"/>
+                    <Label text="Employee Skill" class="sapUiTinyMarginTop"/>
+                    <Input value="sap fiori"/>
+                </f:content>   
+            </f:SimpleForm>
+            <FlexBox  justifyContent="End">
+                <Button text="Go" type="Accept" press="onPressGo"></Button>
+                <Button text="Reset" type="Reject"></Button>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

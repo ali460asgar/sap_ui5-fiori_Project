@@ -3,9 +3,8 @@ sap.ui.define([
 ], (Controller) => {
     "use strict";
 
-    return Controller.extend("fiori.app.fioridemo4.controller.View2", {
+    return Controller.extend("fiori.app.fioridemo4.controller.View3", {
         onInit() {
-            
         },
 
         onPressBackButton: function(){

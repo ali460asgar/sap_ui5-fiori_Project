@@ -1,6 +1,95 @@
-<mvc:View controllerName="fiori.app.fioridemo4.controller.View2"
+<mvc:View
+    controllerName="fiori.app.fioridemo4.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page2" title="This is view2" showNavButton="true" navButtonPress="onPressBackButton">
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+>
+    <Page
+        id="page2"
+        title="This is view2"
+        showNavButton="true"
+        navButtonPress="onPressBackButton"
+        titleAlignment="Center"
+    >
+        <content>
+            <Panel id="idEmpDetail" headerText="Employee Details" expandable="true" expandAnimation="true" expanded="true">
+                <l:Grid defaultSpan="L3 M3" vSpacing="0"> 
+                    <l:content>
+                        <Label text="Employee ID" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Name" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Designation" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Skill" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Email Id" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Phone No." class="sapUiTinyMarginTop"/>
+                        <Input />
+                    </l:content>
+                </l:Grid>
+            </Panel>
+            <Panel id="idFamiDetail" headerText="Family Details" expandable="true" expandAnimation="true">
+                <l:Grid defaultSpan="L6 M6" vSpacing="0"> 
+                    <l:content>
+                        <Label text="Employee ID" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Name" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Designation" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Skill" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Email Id" class="sapUiTinyMarginTop"/>
+                        <Input />
+                        <Label text="Employee Phone No." class="sapUiTinyMarginTop"/>
+                        <Input />
+                    </l:content>
+                </l:Grid>
+            </Panel>
+            <Panel headerText="zig zag pattern" expandable="true" expandAnimation="true">
+                <l:Grid> 
+                    <l:content>
+                        <Label text="Employee ID" class="sapUiTinyMarginTop">
+                            <layoutData>
+                                <l:GridData span="L6 M6"></l:GridData>
+                            </layoutData>
+                        </Label>
+                        <Input />
+                        <Label text="Employee Name" class="sapUiTinyMarginTop">
+                            <layoutData>
+                                <l:GridData span="L3 M3"></l:GridData>
+                            </layoutData>
+                        </Label>
+                        <Input />
+                        <Label text="Employee Designation" class="sapUiTinyMarginTop">
+                            <layoutData>
+                                <l:GridData span="L3 M3"></l:GridData>
+                            </layoutData>
+                        </Label>
+                        <Input />
+                        <Label text="Employee Skill" class="sapUiTinyMarginTop">
+                            <layoutData>
+                                <l:GridData span="L3 M3"></l:GridData>
+                            </layoutData>
+                        </Label>
+                        <Input />
+                        <Label text="Employee Email Id" class="sapUiTinyMarginTop">
+                            <layoutData>
+                                <l:GridData span="L6 M6"></l:GridData>
+                            </layoutData>
+                        </Label>
+                        <Input />
+                        <Label text="Employee Phone No." class="sapUiTinyMarginTop">
+                            <layoutData>
+                                <l:GridData span="L3 M3"></l:GridData>
+                            </layoutData>
+                        </Label>
+                        <Input />
+                    </l:content>
+                </l:Grid>
+            </Panel>
+        </content>
     </Page>
 </mvc:View>

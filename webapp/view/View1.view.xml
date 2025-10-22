@@ -1,10 +1,16 @@
 <mvc:View controllerName="fiori.app.fioridemo4.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" class="appTitle" title="This is view1">
-        <Text text="Welcome to SAP UI5" textAlign="Center" width="100%" class="sapMH3FontSize"></Text>
-        <Label text="Enter Your Name" required="true"></Label>
-        <Input width="25%" maxLength="10"></Input>
-        <Button text="nav to view 2" press="onPress"></Button>
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" class="appTitle" title="This is view1" titleAlignment="Center">
+        
+        <footer>
+            <Bar >
+                <contentRight>
+                    <Button id="idBtnV1" type="Accept" text="nav to view 2" press="onPressGoToV1"></Button>
+                    <Button id="idBtnV2" type="Accept" text="nav to view 3" press="onPressGoToV2"></Button>
+                </contentRight>
+            </Bar>
+        </footer>
     </Page>
 </mvc:View>
